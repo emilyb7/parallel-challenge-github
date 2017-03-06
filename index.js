@@ -52,29 +52,18 @@ function getUser(username, cb) {
 // this function should only return something when all the data has been retrieved from the API!
 
 function getAllUsers(arr, cb) {
-  var result = [];
-  arr.forEach(function(user) {
-    getUser(user, function(obj) {
-      result = result.concat([obj]);
-      if (result.length === arr.length) {
-        cb(result)
-      }
-    });
-  });
+  // your function here!
 }
 
 // TO DO: bonus - make sure the users are sorted in order of the number people they're following
 // adapt the final callback below to include this new function!
 function sortUsers(arr) {
-  return arr.sort(function(a, b) {
-    return b.following - a.following;
-  })
+  // return sorted array!
 }
 
 // called when all the data has been retrieved
 function finalCallback(arr) {
-  var sortedUsers = sortUsers(arr.slice(0));
-  var rows = sortedUsers.map(createTableRow);
+  var rows = arr.map(createTableRow);
   rows.forEach(function(r) {
     document.querySelector("table").appendChild(r);
   })
