@@ -1,0 +1,7 @@
+table , tr, td{
+  border: 1px solid navy;
+}
+
+td {
+  width: 150px;
+}
