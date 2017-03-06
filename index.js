@@ -1,4 +1,21 @@
-var githubHandles = ["emilyb7", "jsms90", "shiryz", "sofer"];
+var githubHandles = [
+  "Akin909",
+  "alexis-l8",
+  "antoniotrkdz",
+  "bo-bok",
+  "ConchobarMacNessa",
+  "finnhodgkin",
+  "joeylouise",
+  "lucyrose93",
+  "majakudlicka",
+  "oliverjam",
+  "pbywater",
+  "PiotrBerebecki",
+  "Samatar26",
+  "smarthutza",
+  "yvonne-liu",
+  "ZooeyMiller"
+];
 
 // TO DO: put your github access token here
 var access_token = "";
