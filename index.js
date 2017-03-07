@@ -68,12 +68,20 @@ function getUser(username, cb) {
 // TO DO: write a function "getAllUsers" which returns details of all your users
 // this function should only return something when all the data has been retrieved from the API!
 
+function insertAt (arr, item, pos) {
+  return arr.slice(0, pos)
+    .concat([item])
+    .concat(arr.slice(pos + 1));
+}
+
 function getAllUsers(arr, cb) {
-  var result = [];
-  arr.forEach(function(user) {
+  var result = Array(arr.length);
+  arr.forEach(function(user, index) {
     getUser(user, function(obj) {
-      result = result.concat([obj]);
-      if (result.length === arr.length) {
+      result = insertAt(result, obj, index);
+      if (result.filter(function(item){
+        return item !== undefined;
+      }).length === arr.length) {
         cb(result)
       }
     });
