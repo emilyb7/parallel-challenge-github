@@ -14,7 +14,7 @@ var githubHandles = [
   "Samatar26",
   "smarthutza",
   "yvonne-liu",
-  "ZooeyMiller"
+  "ZooeyMiller",
 ];
 
 // TO DO: put your github access token here
@@ -83,7 +83,7 @@ function getAllUsers(arr, cb) {
 // TO DO: bonus - make sure the users are sorted in order of the number people they're following
 // adapt the final callback below to include this new function!
 function sortUsers(arr) {
-  // sorting function here
+  // sort function here
 }
 
 // called when all the data has been retrieved
