@@ -83,15 +83,12 @@ function getAllUsers(arr, cb) {
 // TO DO: bonus - make sure the users are sorted in order of the number people they're following
 // adapt the final callback below to include this new function!
 function sortUsers(arr) {
-  return arr.sort(function(a, b) {
-    return b.following - a.following;
-  })
+  // sorting function here
 }
 
 // called when all the data has been retrieved
 function finalCallback(arr) {
-  var sortedUsers = sortUsers(arr.slice(0));
-  var rows = sortedUsers.map(createTableRow);
+  var rows = arr.map(createTableRow);
   rows.forEach(function(r) {
     document.querySelector("table").appendChild(r);
   })
