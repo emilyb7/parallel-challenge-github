@@ -18,7 +18,7 @@ var githubHandles = [
 ];
 
 // TO DO: put your github access token here
-var access_token = "?access_token=4a699e03827e7850d3b7111cfc44aeb0419186a6";
+var access_token = ;
 
 function createTableRow(user) {
     var tr = document.createElement("tr");
